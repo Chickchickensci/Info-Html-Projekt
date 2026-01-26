@@ -1,0 +1,113 @@
+body {
+  background-color: rgb(255, 255, 255);
+  padding-top: 60px;
+}
+
+.nav{
+  background-color: skyblue;
+  overflow:hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.nav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none; /* Keine Unterlinien */
+  padding: 14px 16px;
+  font-size: 15px;
+}
+
+/* Farbe der Links */
+.nav a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Farbe des aktuellen Link */
+.nav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.image-left img {
+  width: 400px; /* Etwas kleiner für bessere Optik */
+  height: auto; /* Proportionales Skalieren */
+  margin-right: 20px;
+}
+
+.container {
+  margin: 2em 1em;
+  display: flex;
+  align-items: center; /* Richtet Bild und Text vertikal mittig aus */
+  border-bottom: 1px solid #ccc; /* Trennung der Spiele */
+  padding-bottom: 1em;
+}
+
+.text-content {
+  flex: 1; /* Nutzt den gesamten restlichen Platz */
+  display: flex;
+  flex-direction: column; /* Stapelt h3 und p */
+}
+
+.text-content h3 {
+
+
+  margin-top: 0;
+}
+
+.custom-box {
+    display: inline-block;
+    width: 250px;
+    padding: 50px 20px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    border-radius: 15px;
+    transition: transform 0.2s;
+}
+
+/* Farben für jede Boxen*/
+.btn-gaming {
+    background-color: #ff4757; 
+    border: 3px solid #ff6b81;
+}
+
+.btn-social {
+    background-color: #2f3542; 
+    border: 3px solid #70a1ff;
+}
+
+.btn-schule {
+    background-color: #2ed573; 
+    border: 3px solid #7bed9f;
+}
+
+/* Box bei Mauskontakt größer*/
+.custom-box:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    position: relative;   /* absolute Position */
+    padding: 10px 20px;
+    background-color: #f2f2f2;
+}
+
+.impressum-btn {
+    position: absolute;
+    right: 20px;          /* ganz rechts */
+    top: 50%;             /* gleiche Höhe */
+    transform: translateY(-50%);
+    
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
